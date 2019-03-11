@@ -22,3 +22,8 @@ services:
     notificacionesservice:
         class: AppBundle\Service\NotificacionesService
         arguments: ['@mailer','@templating']
+
+    verificacion:
+        class: AppBundle\Command\VerificacionCommand
+        tags:
+            - { name: console.command }
