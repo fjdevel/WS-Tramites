@@ -1,0 +1,84 @@
+<?php
+
+namespace AppBundle\Entity;
+
+/**
+ * TipoDeTramite
+ */
+class TipoDeTramite
+{
+    /**
+     * @var integer
+     */
+    private $idTipoTramite;
+
+    /**
+     * @var string
+     */
+    private $codigoTramite;
+
+    /**
+     * @var string
+     */
+    private $nombre;
+
+
+    /**
+     * Get idTipoTramite
+     *
+     * @return integer
+     */
+    public function getIdTipoTramite()
+    {
+        return $this->idTipoTramite;
+    }
+
+    /**
+     * Set codigoTramite
+     *
+     * @param string $codigoTramite
+     *
+     * @return TipoDeTramite
+     */
+    public function setCodigoTramite($codigoTramite)
+    {
+        $this->codigoTramite = $codigoTramite;
+
+        return $this;
+    }
+
+    /**
+     * Get codigoTramite
+     *
+     * @return string
+     */
+    public function getCodigoTramite()
+    {
+        return $this->codigoTramite;
+    }
+
+    /**
+     * Set nombre
+     *
+     * @param string $nombre
+     *
+     * @return TipoDeTramite
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get nombre
+     *
+     * @return string
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+}
+
